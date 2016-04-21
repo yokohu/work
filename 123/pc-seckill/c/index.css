@@ -1,0 +1,117 @@
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+}
+.main-wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  zoom: 1;
+  width: 765px;
+  height: 484px;
+  background: url('../i/bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.title {
+  width: 415px;
+  height: 146px;
+  margin-left: 167px;
+  background: url('../i/title.png');
+}
+.line {
+  width: 680px;
+  margin-left: 36px;
+  border-top: 1px solid #454e59;
+  border-bottom: 1px solid #000337;
+}
+.content {
+  position: relative;
+  top: 23px;
+  left: 80px;
+  width: 636px;
+  height: 280px;
+}
+.ico-pic {
+  float: left;
+  width: 177px;
+  height: 140px;
+}
+.two {
+  background: url('../i/2W.png') no-repeat;
+}
+.five {
+  background: url('../i/5W.png') no-repeat;
+}
+
+/*倒计时*/
+.clock {
+  float: right;
+}
+.clock-title {
+  margin-bottom: 8px;
+  font-size: 2.7em;
+}
+
+.time {
+  display: inline-block;
+  width: 113px;
+  height: 55px;
+  background: url('../i/bg-border.png') no-repeat;
+}
+.txt-time {
+  margin-top: -11px;
+  margin-left: 12px;
+  font-size: 6em;
+  color: #fff;
+  letter-spacing: .4em;
+}
+.pointcon {
+  float: left;
+  margin-top: -89px;
+  margin-left: 94px;
+  font-size: 7em;
+  line-height: 100px;
+}
+.btn-seckill{
+  width: 160px;
+  height: 50px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 12px;
+}
+/*秒杀前、中、后 按钮*/
+.btn-no{
+  height: 100%;
+  background: url('../i/btn-no.png') no-repeat;
+}
+.btn-yes{
+  height: 100%;
+  background: url('../i/btn-yes.png') no-repeat;
+}
+.btn-null{
+  height: 100%;
+  background: url('../i/btn-null.png') no-repeat;
+}
+/*活动规则说明*/
+.rule {
+  position: absolute;
+  bottom: 0;
+}
+.rule p {
+  font-size: 2.8em;
+}
+
+.rule-list {
+  font-size: 2.3em;
+}
+
+/*秒杀成功弹窗*/
+.pop-seckill{
+  position: fixed;
+}
+

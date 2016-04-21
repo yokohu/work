@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../c/base.css">
+  <link rel="stylesheet" href="../c/index.css">
+  <title>seckill</title>
+</head>
+<body>
+  <div class="main-wrap">
+    <div class="title"></div>
+    <!--分割线-->
+    <div class="line"></div>
+    <div class="content">
+    <!--四点场 1元2w-->
+      <div class="ico-pic two"></div>
+    <!--六点场 1元5w-->
+      <div class="ico-pic five hide"></div>
+      <!--倒计时-->
+      <div class="clock">
+        <p class="clock-title">秒杀倒计时</p>
+        <ul class="colck-body">
+          <li class="time"><p class="txt-time hour">00</p><p class="pointcon">:</p></li>
+          <li class="time"><p class="txt-time minute" >00</p><p class="pointcon">:</p></li>
+          <li class="time"><p class="txt-time second">00</p></li>
+        </ul>
+      </div>
+      <div class="btn-seckill">
+        <!--没开始秒杀-->
+        <div class="btn-no"></div>
+        <!--开始秒杀 -->
+        <div class="btn-yes hide"></div>
+        <!--开始秒杀 点击后请求返回是否有库存 若无-->
+        <div class="btn-null hide"></div>
+      </div>
+      <div class="rule">
+      <p>活动规则:</p>
+       <ul class="rule-list">
+         <li>1. 1元夺金秒杀赛为支付宝专享活动；</li>
+         <li> 2. 每日开展2场秒杀赛，16:00场为1元秒杀2万金币，20:00场为1元秒杀5万金</li>
+         <li>3. 更多活动可加入咪咪游戏QQ群：389905172</li>
+       </ul>
+      </div>
+      <!--秒杀成功弹窗-->
+      <iframe src="http://www.baidu.com" class="pop-seckill hide"></iframe>
+      <!---->
+
+  </div>
+  </div>
+/
+
+<script type="text/javascript">
+/* 需要两个接口
+ 1.返回时间： （1）当前时间：currentTime
+              （2）下一次秒杀时间：seckillTime
+2.返回是否有库存： 库存 ：inventory
+*/
+  // 配置参数
+  window.oPageConfig = {
+    oUrl: {
+      timeUrl:'/time'
+    , remainUrl: '/remain'
+    }
+  , oData:{
+      numId:1
+    }
+  };
+</script>
+<script type="text/javascript" src='../j/lib/jquery-1.9.1.min.js'></script>
+<!-- test -->
+<script type="text/javascript" src="../j/test/index.js"></script>
+<!-- test end-->
+<script type="text/javascript" src="../j/index.js"></script>
+</body>
+</html>
